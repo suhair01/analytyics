@@ -1,0 +1,39 @@
+body {
+  font-family: sans-serif;
+  background: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  text-align: center;
+}
+
+.header {
+  background: #e84142;
+  color: white;
+  padding: 20px;
+}
+
+.stats-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 0 10px #ccc;
+  padding: 20px;
+  width: 200px;
+}
+
+.token-section {
+  margin: 30px;
+}
+
+#tokenVolumeList {
+  list-style: none;
+  padding: 0;
+}
