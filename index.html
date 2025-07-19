@@ -1,27 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Router Analytics</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <script src="https://cdn.jsdelivr.net/npm/ethers@6.6.2/dist/ethers.umd.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Avaly Router Analytics</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-  <div class="header">
-    <h1>Router Analytics Dashboard</h1>
+  <h1>Avaly Router Analytics</h1>
+  <div class="stats">
+    <div><strong>Total Transactions:</strong> <span id="txCount">Loading...</span></div>
+    <div><strong>Total AVAX Volume:</strong> <span id="avaxVolume">Loading...</span></div>
+    <div><strong>Total Users:</strong> <span id="userCount">Loading...</span></div>
   </div>
 
-  <div class="stats-container">
-    <div class="card"><h2 id="txCount">0</h2><p>Total Transactions</p></div>
-    <div class="card"><h2 id="totalVolume">0</h2><p>Total Volume (AVAX)</p></div>
-    <div class="card"><h2 id="userCount">0</h2><p>Total Users</p></div>
-  </div>
-
-  <div class="token-section">
-    <h3>Token Volume Breakdown</h3>
-    <ul id="tokenVolumeList"></ul>
-  </div>
+  <h2>Token Volume Breakdown</h2>
+  <canvas id="tokenChart" width="400" height="200"></canvas>
 
   <script src="script.js"></script>
 </body>
